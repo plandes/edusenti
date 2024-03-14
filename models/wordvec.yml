@@ -1,0 +1,20 @@
+# @meta {desc: 'non-contextual embedding models', date: '2024-03-05'}
+
+## Word vec
+#
+esid_default:
+  embedding_name: glove_300
+
+
+## Model
+#
+classify_net_settings:
+  recurrent_settings: 'instance: recurrent_settings'
+
+model_settings:
+  learning_rate: 1e-1
+  epochs: 50
+  optimizer_params:
+    weight_decay: 0.01
+  scheduler_params:
+    patience: 5

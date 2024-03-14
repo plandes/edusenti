@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+
+"""A separate CLI entry point for creating the distribution file.
+
+"""
+
+from zensols import deepnlp
+
+# initialize the NLP system
+deepnlp.init()
+
+
+if (__name__ == '__main__'):
+    from zensols.cli import ConfigurationImporterCliHarness
+    harness = ConfigurationImporterCliHarness(
+        src_dir_name='src/python',
+        app_factory_class='zensols.edusenti.ApplicationFactory',
+        app_config_resource='dist-resources/app.conf',
+        proto_args='proto -c models/wordvec.yml',
+        proto_factory_kwargs={'reload_pattern': r'^zensols.edusenti'},
+    )
+    harness.run()

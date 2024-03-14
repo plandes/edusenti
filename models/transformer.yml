@@ -1,0 +1,12 @@
+# @meta {desc: 'transformer models', date: '2024-03-05'}
+
+esid_default:
+  embedding_name: transformer_trainable
+  model_name: 'EduSenti: ${model_id}'
+
+model_settings:
+  learning_rate: 5e-6
+  epochs: 20
+  optimizer_class_name: zensols.deepnlp.transformer.TransformerAdamFactory
+  scheduler_params:
+    patience: 5
