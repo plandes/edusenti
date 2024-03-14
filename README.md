@@ -10,6 +10,22 @@ Albanian.  This repository contains the code base to be used for the paper
 reproduce the results, see the paper [reproduction repository].  If you use our
 model or API, please [cite](#citation) our paper.
 
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-refresh-toc -->
+## Table of Contents
+
+- [Obtaining](#obtaining)
+- [Usage](#usage)
+- [API](#api)
+- [Models](#models)
+- [Differences from the Paper Repository](#differences-from-the-paper-repository)
+- [Documentation](#documentation)
+- [Changelog](#changelog)
+- [Citation](#citation)
+- [License](#license)
+
+<!-- markdown-toc end -->
+
+
 
 ## Obtaining
 
@@ -56,28 +72,6 @@ logits: {'+': 0.70292175, '-': 0.17432323, 'n': 0.12275504}
 ```
 
 
-## Differences from the Paper Repository
-
-The paper [reproduction repository] has quite a few differences, mostly around
-reproducibility.  However, this repository is designed to be a package used for
-research that applies the model.  To reproduce the results of the paper, please
-refer to the [reproduction repository].  To use the best performing model
-(XLM-RoBERTa Large) from that paper, then use this repository.
-
-The primary difference is this repo has significantly better performance in
-Albanian, which climbed from from F1 71.9 to 83.5 (see [models](#models)).
-However, this repository has no English sentiment model since it was only used
-for comparing methods.
-
-Changes include:
-
-* Python was upgraded from 3.9.9 to 3.11.6
-* PyTorch was upgraded from 1.12.1 to 2.1.1
-* HuggingFace transformers was upgraded from 4.19 to 4.35
-* [zensols.deepnlp] was upgraded from 1.8 to 1.13
-* The dataset was re-split and stratified.
-
-
 ## Models
 
 The [models] are downloaded the first time the API is used.  To change the
@@ -100,6 +94,28 @@ Performance of the models on the test set when trained and validated are below.
 However, the distributed models were trained on the training and test sets
 combined.  The validation metrics of those trained models are available on the
 command line with `edusenti info`.
+
+
+## Differences from the Paper Repository
+
+The paper [reproduction repository] has quite a few differences, mostly around
+reproducibility.  However, this repository is designed to be a package used for
+research that applies the model.  To reproduce the results of the paper, please
+refer to the [reproduction repository].  To use the best performing model
+(XLM-RoBERTa Large) from that paper, then use this repository.
+
+The primary difference is this repo has significantly better performance in
+Albanian, which climbed from from F1 71.9 to 83.5 (see [models](#models)).
+However, this repository has no English sentiment model since it was only used
+for comparing methods.
+
+Changes include:
+
+* Python was upgraded from 3.9.9 to 3.11.6
+* PyTorch was upgraded from 1.12.1 to 2.1.1
+* HuggingFace transformers was upgraded from 4.19 to 4.35
+* [zensols.deepnlp] was upgraded from 1.8 to 1.13
+* The dataset was re-split and stratified.
 
 
 ## Documentation
