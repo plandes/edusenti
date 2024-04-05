@@ -4,7 +4,7 @@ analysis.
 """
 __author__ = 'Paul Landes'
 
-from typing import List, Tuple
+from typing import List, Tuple, Any
 from dataclasses import dataclass
 import logging
 from pathlib import Path
