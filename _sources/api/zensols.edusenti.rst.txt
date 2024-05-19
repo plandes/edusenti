@@ -1,0 +1,43 @@
+zensols.edusenti package
+========================
+
+Submodules
+----------
+
+zensols.edusenti.app
+--------------------
+.. inheritance-diagram:: zensols.edusenti.app
+   :parts: 1
+
+.. automodule:: zensols.edusenti.app
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+zensols.edusenti.cli
+--------------------
+.. inheritance-diagram:: zensols.edusenti.cli
+   :parts: 1
+
+.. automodule:: zensols.edusenti.cli
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+zensols.edusenti.domain
+-----------------------
+.. inheritance-diagram:: zensols.edusenti.domain
+   :parts: 1
+
+.. automodule:: zensols.edusenti.domain
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: zensols.edusenti
+   :members:
+   :undoc-members:
+   :show-inheritance:
