@@ -173,7 +173,7 @@ Copyright (c) 2023 - 2024 Paul Landes and Krenare Pireva Nuci
 [python311-badge]: https://img.shields.io/badge/python-3.11-blue.svg
 [python311-link]: https://www.python.org/downloads/release/python-3110
 
-[RoBERTa Low Resource Fine Tuning for Sentiment Analysis in Albanian]: https://aclanthology.org/2024.lrec-main.1233
+[RoBERTa Low Resource Fine Tuning for Sentiment Analysis in Albanian]: https://aclanthology.org/2024.lrec-main.1233.pdf
 [reproduction repository]: https://github.com/uic-nlp-lab/edusenti
 [models]: https://zenodo.org/records/10795173
 [zensols.deepnlp]: https://github.com/plandes/deepnlp
